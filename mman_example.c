@@ -12,8 +12,7 @@ int main(int argc, char **argv)
         allocated_mm
     );
 
-    // Now initialize with memory likely from the heap, since the requested
-    // memory is small
+    // Now allocate memory to initialize variable
     allocated_mm = (char *)allocvm(sizeof(input));
     if (allocated_mm == NULL)
     {

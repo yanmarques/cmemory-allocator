@@ -91,9 +91,9 @@ int dealloc()
 }
 
 /**
- * Get virtual memory.
+ * Allocate virtual memory region from kernel using mmap.
  *
- * @size: How many bytes
+ * @size: Amount of bytes to allocate
 */
 void *allocvm(unsigned long size)
 {
